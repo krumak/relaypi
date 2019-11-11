@@ -24,15 +24,28 @@ try:
   GPIO.output(2, GPIO.LOW)
   print ("ONE")
   time.sleep(SleepTimeL);
-  GPIO.output(3, GPIO.LOW)
+    GPIO.output(2, GPIO.HIGH)
+  print ("ONEA")
+  time.sleep(1);
+    GPIO.output(3, GPIO.LOW)
   print ("TWO")
   time.sleep(SleepTimeL);
-  GPIO.output(4, GPIO.LOW)
+    GPIO.output(3, GPIO.HOGH)
+  print ("TWOA")
+  time.sleep(1);
+    GPIO.output(4, GPIO.LOW)
   print ("THREE")
   time.sleep(SleepTimeL);
+  GPIO.output(4, GPIO.HIGH)
+  print ("THREEA")
+  time.sleep(1);
   GPIO.output(17, GPIO.LOW)
   print ("FOUR")
   time.sleep(SleepTimeL);
+    GPIO.output(17, GPIO.HIGH)
+  print ("FOURA")
+  time.sleep(1);
+    
   GPIO.cleanup()
   print ("Good bye!")
 
@@ -42,7 +55,3 @@ except KeyboardInterrupt:
 
   # Reset GPIO settings
   GPIO.cleanup()
-
-
-# find more information on this script at
-# http://youtu.be/WpM1aq4B8-A
